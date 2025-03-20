@@ -1,0 +1,156 @@
+ body{
+        background: linear-gradient(180deg, rgba(96, 176, 188, 1) 0%, rgba(213, 175, 220, 1) 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }  
+.layout{
+    display: grid;
+    grid-template-columns:repeat(3, 100px);
+    grid-template-rows:repeat(3, 100px);
+    border: 27px solid #c9e6e8;
+    width:fit-content;
+    border-radius: 32px;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #F6E9FE;
+    margin:5vh auto;
+    padding: 0vw;
+    box-shadow: 0px 0px 50px rgb(173, 214, 216);
+    
+}
+
+button{
+    font-family: 'MyCustomFon', sans-serif;
+    padding: 10px 20px;
+    font-size: 1.7rem; 
+    height: 70px; 
+    flex: 1; 
+    background-color: #90C4D4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: min(30vw, 150px); 
+    height: min(10vh, 70px);  
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+button:hover {
+    background-color: #be4ee1; 
+}
+@font-face {
+    font-family: 'MyCustomFon';
+    src: url('./SmoochSans-VariableFont_wght.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.cell {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-family: 'MyCustomFont', sans-serif;
+    
+}
+
+.hidden{
+   display: none;
+}
+
+
+#messageBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+}
+#messageBox button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #90c4d4;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+#messageBox,#warningBox button:hover {
+    background-color: #be4ee1;
+}
+
+#warningBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    font-family: 'MyCustomFon', sans-serif;
+    font-size: xx-large;
+}
+#warningBox button{
+    width: 70px;
+    height:50px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #90c4d4;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h1{
+    border: 5px solid #D9C0E8;
+    border-radius: 23px;
+    color:#be4ee1;
+    background-color: #D9C0E8;
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: lighter;
+    font-size: clamp(1.5rem, 4vw, 3rem); 
+    height:15vh;
+    width:90%;
+    text-align: center;
+    margin: 20px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./Orbitron-VariableFont_wght.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#symbolSelection{
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    width: 80%; 
+    max-width: 570px;  
+    margin: 20px auto;
+}
+
