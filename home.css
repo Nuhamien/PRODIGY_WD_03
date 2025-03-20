@@ -91,9 +91,14 @@ button:hover {
     
 }
 
-#messageBox,#warningBox button:hover {
+#messageBox button:hover {
     background-color: #be4ee1;
 }
+#warningBox button:hover 
+    {
+        background-color: #be4ee1;
+    }
+
 
 #warningBox{
     position: fixed;
